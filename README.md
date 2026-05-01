@@ -24,6 +24,8 @@ Participants revealed hidden black squares in a 6×6 grid, then reproduced their
 
 - **Try it:** [symmetric version](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/demos/symmetry/symmetric/experiment.html) | [asymmetric version](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/demos/symmetry/asymmetric/experiment.html)
 - **Pre-registration:** [OSF.IO/3MPB4](https://osf.io/3mpb4) — `docs/pre-registrations/prereg_symmetry/`
+- **Protocol-folder**: [here](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/symmetry/protocolFolder2.zip)
+- **Protocol sum**: 2e12828adcf41a5382c06ae9c2ec43a2222af89d2e89ae52e2a2f979e0887f13
 - **Data:** `data/symmetry/`
 - **Experiment code:** `experiments/symmetry/`
 - **Analysis:** `analysis/reportSymmetry.Rmd`
