@@ -114,8 +114,7 @@ time_taken = sprintf("%d:%02d", mins, secs)  # Returns "3:05"
 
 
 ```{r design, echo=FALSE, fig.cap="Experimental design, Exp. 1. Left: in part 1 of the experiment, participants attempted to reveal all black squares in a 6x6 grid while touching as few white squares as possible. Each round started with several black squares (one from each group) revealed (marked in black), and the others hidden (marked in gray). Round 1 was identical for all participants, but game boards in rounds 2-4 were symmetric or asymmetric for different participants. Top right: In the special bonus round, participants were instructed to repeat their guesses from part 1. Bottom right: the screen as it appeared to participants during the game. Unrevealed cards were marked in yellow, and became white or black once clicked.", out.width = '75%'}
-# TODO: export figures/design.png from the source file in rememberingRound1/docs/figures/design.ai
-knitr::include_graphics("figures/design.png")
+knitr::include_graphics("../docs/figures/design.png")
 ```
 
 In part 1 of the experiment, participants attempted to reveal all black squares in a 6-by-6 grid while touching as few white squares as possible. Each game round started with three or four black squares revealed, and participants were told that all black squares were clustered in groups of 2-4 around the revealed squares. Crucially, while round 1 was identical for all participants (top left grid in Fig. \@ref(fig:design)), game boards in rounds 2-4 were importantly different for the two groups. In the symmetric group, these boards were symmetric along the vertical axis, but they were asymmetric for participants in the asymmetric group. This way, by the end of the first part of the experiment, only participants in the "symmetric" group learned a hidden rule: all game boards are symmetric.
@@ -170,8 +169,7 @@ As expected, the symmetric and asymmetric groups had a similar number of misses 
 
 
 ```{r Exp1results, echo=FALSE, fig.cap="Number of white squares touched (misses) in the game and memory rounds, Exp. 1, as a function of round number (upper panel), and as a function of participants' answer to the debrief question (lower panel). ***: p<0.001", out.width = '75%'}
-# TODO: export figures/misses.png from the source file in rememberingRound1/docs/figures/misses.ai
-knitr::include_graphics("figures/misses.png")
+knitr::include_graphics("../docs/figures/misses.png")
 ```
 
 
