@@ -966,7 +966,7 @@
             }
 
             try {
-                const response = await fetch('../../experiment2/assets/nouns.json');
+                const response = await fetch('../../experiment2/webpage/assets/nouns.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const wordData = await response.json();
                 NOUNS = wordData.nouns;
