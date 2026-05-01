@@ -154,7 +154,7 @@
             ];
 
             try {
-                const response = await fetch('../../experiment1/assets/nouns.json');
+                const response = await fetch('../../experiment1/webpage/assets/nouns.json');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const wordData = await response.json();
                 NOUNS = wordData.nouns;
@@ -483,8 +483,8 @@
                         const choices = document.querySelectorAll('.stimulus-card');
 
                         const imageMap = {
-                            rubies: '../../experiment1/assets/ruby.png',
-                            emeralds: '../../experiment1/assets/emerald.png',
+                            rubies: '../../experiment1/webpage/assets/ruby.png',
+                            emeralds: '../../experiment1/webpage/assets/emerald.png',
                             stones: '../../experiment1/assets/stone.png'
                         };
 
