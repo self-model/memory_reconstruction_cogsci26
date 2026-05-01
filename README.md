@@ -24,7 +24,7 @@ Participants revealed hidden black squares in a 6×6 grid, then reproduced their
 
 - **Try it:** [symmetric version](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/demos/symmetry/symmetric/experiment.html) | [asymmetric version](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/demos/symmetry/asymmetric/experiment.html)
 - **Pre-registration:** [OSF.IO/3MPB4](https://osf.io/3mpb4) — `docs/pre-registrations/prereg_symmetry/`
-- **Protocol-folder**: [here](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/symmetry/protocolFolder2.zip)
+- **Protocol-folder** (for [randomization-based preregistration](https://medium.com/@mazormatan/cryptographic-preregistration-from-newton-to-fmri-df0968377bb2)): [here](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/symmetry/protocolFolder2.zip)
 - **Protocol sum**: 2e12828adcf41a5382c06ae9c2ec43a2222af89d2e89ae52e2a2f979e0887f13
 - **Data:** `data/symmetry/`
 - **Experiment code:** `experiments/symmetry/`
@@ -37,7 +37,7 @@ On each trial, participants chose between three labelled boxes to collect hidden
 - **Try it:** [here](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/demos/experiment1/experiment.html)
 - **Pre-registration:** [OSF.IO/K8AT9](https://osf.io/k8at9) — `docs/pre-registrations/prereg1/`
 - **Protocol-folder**: [here](https://self-model.github.io/memory_reconstruction_cogsci26/experiments/experiment1/exp1_protocolFolder.zip)
-- **Protocol sum** (for [randomization-based preregistration](https://medium.com/@mazormatan/cryptographic-preregistration-from-newton-to-fmri-df0968377bb2)):  bb0b97cd13d98339719f449913a4057bc8e90e66bccd00418d88bb9801e26165
+- **Protocol sum**:  bb0b97cd13d98339719f449913a4057bc8e90e66bccd00418d88bb9801e26165
 - **Data:** `data/experiment1/`
 - **Experiment code:** `experiments/experiment1/`
 - **Analysis:** `analysis/exp1_standardised.Rmd`
