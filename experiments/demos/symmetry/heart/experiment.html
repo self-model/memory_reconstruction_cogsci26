@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hidden Heart</title>
+  <script src="../../../symmetry/webpage/jquery/jquery.min.js"></script>
+  <script src="../../../symmetry/webpage/jspsych-6.1.0/jspsych.js"></script>
+  <script src="../../../symmetry/webpage/jspsych-6.1.0/plugins/jspsych-fullscreen.js"></script>
+  <script src="../../../symmetry/webpage/jspsych-6.1.0/plugins/jspsych-instructions.js"></script>
+  <script src="../../../symmetry/webpage/jspsych-6.1.0/plugins/jspsych-findSquares.js"></script>
+  <script src="../../../symmetry/webpage/p5/p5.min.js"></script>
+  <link href="../../../symmetry/webpage/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body></body>
+
+<script>
+
+  // 10×10 grid — black squares ('1') form a heart shape
+  var heartGrid = [
+    ['0','0','0','0','0','0','0','0','0','0'],
+    ['0','0','1','1','0','0','1','1','0','0'],
+    ['0','1','1','1','1','1','1','1','1','0'],
+    ['1','1','1','1','1','1','1','1','1','1'],
+    ['1','1','1','1','1','1','1','1','1','1'],
+    ['0','1','1','1','1','1','1','1','1','0'],
+    ['0','0','1','1','1','1','1','1','0','0'],
+    ['0','0','0','1','1','1','1','0','0','0'],
+    ['0','0','0','0','1','1','0','0','0','0'],
+    ['0','0','0','0','0','0','0','0','0','0']
+  ];
+
+  // Two cards pre-revealed — one on each bump of the heart
+  var heartAlreadyClicked = [
+    [1, 2],
+    [1, 7]
+  ];
+
+  window.addEventListener('load', function () {
+
+    var timeline = [];
+
+    timeline.push({
+      type: 'fullscreen',
+      fullscreen_mode: true
+    });
+
+    timeline.push({
+      type: 'instructions',
+      show_clickable_nav: true,
+      pages: [
+        `<p>Welcome to this special demo!</p>
+         <p>Your task: find all the hidden black cards by clicking the yellow squares.</p>
+         <p>Two cards are already revealed to give you a hint &mdash; can you see the shape?</p>`
+      ]
+    });
+
+    timeline.push({
+      type: 'findSquares',
+      grid: heartGrid,
+      already_clicked: heartAlreadyClicked,
+      cheat: false,
+      text: 'Find the 52 hidden black cards. Two are already revealed — can you see the shape?',
+      textSize: 15
+    });
+
+    timeline.push({
+      type: 'instructions',
+      show_clickable_nav: true,
+      pages: [
+        `<p style="font-size:2em;">&#9829;</p>
+         <p>You found it! The hidden shape was a heart.</p>
+         <p>Thank you for playing!</p>`
+      ]
+    });
+
+    jsPsych.init({ timeline: timeline });
+  });
+
+</script>
+
+</html>
