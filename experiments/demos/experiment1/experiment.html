@@ -776,8 +776,7 @@
                     }
                 ],
                 on_finish: function(data) {
-                    const correct_answer = 'always choose the same box that I chose in Part 1';
-                    const is_correct = data.response.comprehension_check_part2_1 === correct_answer;
+                    const is_correct = (data.response.comprehension_check_part2_1 || '').includes('same box');
                     data.correct = is_correct;
                 }
             };
@@ -796,8 +795,7 @@
                     }
                 ],
                 on_finish: function(data) {
-                    const correct_answer = 'the box labelled "glass (3)"';
-                    const is_correct = data.response.comprehension_check_part2_2 === correct_answer;
+                    const is_correct = (data.response.comprehension_check_part2_2 || '').includes('glass');
                     data.correct = is_correct;
                 }
             };
